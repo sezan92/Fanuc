@@ -1,0 +1,27 @@
+fanuc:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  Base_Part2_controller:
+    type: effort_controllers/JointPositionController
+    joint: Base_Part2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Part2_Part3_controller:
+    type: effort_controllers/JointPositionController
+    joint: Part2_Part3
+    pid: {p: 100.0, i: 0.01, d: 10.0}  
+  Part3_Part4_controller:
+    type: effort_controllers/JointPositionController
+    joint: Part3_Part4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Part4_Part5_controller:
+    type: effort_controllers/JointPositionController
+    joint: Part4_Part5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Part5_Part6_controller:
+    type: effort_controllers/JointPositionController
+    joint: Part5_Part6
+    pid: {p: 100.0, i: 0.01, d: 10.0}

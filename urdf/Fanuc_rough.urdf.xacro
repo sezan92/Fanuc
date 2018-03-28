@@ -1,0 +1,102 @@
+<?xml version = "1.0" ?>
+<robot name = "Fanuc" xmlns:xacro ="http://ros.org/wiki/xacro" >
+
+<xacro:macro name = "Base_Origin">
+	<origin xyz = "0 0 0" rpy = "0 0 0"/>
+</xacro:macro>
+
+<xacro:macro name = "Base_Mesh" >
+	<geometry>
+		<mesh filename = "package://fanuc_motoman/meshes/Part 1.STL" scale = "0.001 0.001 0.001" />
+	</geometry>
+	
+</xacro:macro>
+<xacro:macro name = "Part2_Mesh">
+	<geometry>
+		<mesh filename="package://fanuc_motoman/meshes/Part 2.STL" scale="0.001 0.001 0.001"/>
+	</geometry>
+	<origin xyz="-0.02 -0.02 0.16859" rpy = "0 0 0" />
+</xacro:macro>
+<xacro:macro name= "Part3_Mesh">
+	<geometry>
+		<mesh filename="package://fanuc_motoman/meshes/Part 3.STL" scale ="0.001 0.001 0.001"/>
+		
+	</geometry>
+	<origin  xyz ="0.08 -0.01 0.26731" rpy = "0 0 0"/>
+</xacro:macro>
+<!--Base -->
+<link name="base_footprint">
+	<inertial>
+		<origin xyz = "0.105 0.09 0.08042" rpy = "0 0 0" /> <!-- Best value <origin xyz = "0.105 0.09 0.08042" rpy = "0 0 0" />-->
+		<mass value = "4.85331"/>
+		<inertia ixx ="0.000533781" iyy=".055445798" izz=".02302818052" ixy="0.00012915752" ixz ="-0.002807595" iyz = "-0.000094967"/>
+	</inertial>
+	<collision>
+		<xacro:Base_Mesh/>
+		<xacro:Base_origin/>
+	</collision>
+	<visual>
+		<xacro:Base_Mesh />
+		<xacro:Base_origin/>
+	</visual>
+</link>
+
+<link name = "world"/>
+
+<joint name="base_link_joint" type="fixed">
+	<parent link="world"/>
+	<child link="base_footprint" />
+</joint> 
+<gazebo reference= "base_footprint" >
+	<material>Gazebo/Black</material>
+</gazebo>
+<!--Part 2 
+<link name = "Part2">
+	<inertial>
+		<origin xyz = "0.105 0.09 0.24901" rpy = "0 0 0" />
+		<mass value = "4.85331"/>
+		<inertia ixx ="0.000533781" iyy=".055445798" izz=".02302818052" ixy="0.00012915752" ixz ="-0.002807595" iyz = "-0.000094967"/>
+	</inertial>
+	<collision>
+		<xacro:Part2_Mesh/>
+	</collision>
+	<visual>
+		<xacro:Part2_Mesh/>
+	</visual>
+</link>
+<joint name="Base_Part2" type="continuous">
+	<parent link ="base_footprint"/>
+	<child link="Part2"/>
+	<dynamics damping="0.7"/>
+	<axis xyz= "0.105 0.09 1" />
+	
+
+</joint>
+<gazebo reference= "Part2" >
+	<material>Gazebo/Yellow</material>
+</gazebo>
+<link name = "Part3">
+	<inertial>
+		<origin xyz = "0.105 0.09 0.44287" rpy ="0 0 0"/>
+		<mass value = "7.96646"/>
+		<inertia ixx ="0.44125720672" iyy=".42103008445" izz=".03658588308" ixy="0.000023323" ixz ="-0.01624821395" iyz = "-0.00127983617"/>
+	</inertial>
+	<collision>
+		<xacro:Part3_Mesh/>
+	</collision>
+	<visual>
+		<xacro:Part3_Mesh/>
+	</visual>
+</link>
+<joint name="Part2_Part3" type="revolute">
+	<parent link ="Part2"/>
+	<child link="Part3"/>
+	<limit lower="-0.7535" upper="0.7535" effort="30" velocity="1.0"/> 
+	<axis xyz= "0.105 1 0.44287" /> 
+	<dynamics damping="0.7"/>
+</joint>
+<gazebo reference= "Part3" >
+	<material>Gazebo/Yellow</material>
+</gazebo>-->
+</robot>
+
