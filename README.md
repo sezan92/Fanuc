@@ -13,7 +13,7 @@ In this project, I have developed a ```Gazebo``` Model for Fanuc LR mate 200ic I
 * cd to catkin workspace
 * run ```catkin_make```
 * Running simulation
-```roslaunch fanuc_motoman main.launch```	
+```roslaunch Fanuc main.launch```	
 * In the ``` rqt gui ```, Please choose the following topics to run the robot model
 ```/fanuc/fanuc/Base_Part2_controller/command```
 ```/fanuc/fanuc/Part2_Part3_controller/command```
