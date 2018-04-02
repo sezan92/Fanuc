@@ -4,7 +4,7 @@
 	<arg name = "y" default ="0.09"/>
 	<arg name = "z" default ="0.0"/>
 	<arg name = "robot_name" default = ""/>
-	<param name = "robot_description" command = "$(find xacro)/xacro.py '$(find self_balancing_robot)/urdf/robot3.urdf.xacro'"/>
+	<param name = "robot_description" command = "$(find xacro)/xacro.py '$(find fanuc_motoman)/urdf/Fanuc.urdf.xacro'"/>
 	<node name ="urdf_spawner" pkg ="gazebo_ros" type ="spawn_model" respawn ="false" output ="screen" args ="-urdf -x $(arg x) -y $(arg y) -z $(arg z) -model $(arg robot_name) -param robot_description"/>
 
 </launch>

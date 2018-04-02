@@ -15,14 +15,14 @@
 <link name="base_footprint">
 	<collision>
 		<geometry>
-			<mesh filename = "package://fanuc_motoman/meshes/Part 1.STL" scale = "0.001 0.001 0.001" />
+			<mesh filename = "package://fanuc/meshes/Part 1.STL" scale = "0.001 0.001 0.001" />
 		</geometry>
 	<origin xyz = "0 0 0" rpy = "0 0 0"/><!-- Best value <origin xyz = "0.105 0.09 0" rpy = "0 0 0" />-->
 	</collision>
 
 	<visual>
  		<geometry>
-			<mesh filename = "package://fanuc_motoman/meshes/Part 1.STL" scale = "0.001 0.001 0.001" />
+			<mesh filename = "package://fanuc/meshes/Part 1.STL" scale = "0.001 0.001 0.001" />
 		</geometry>
 	<origin xyz = "0 0 0" rpy = "0 0 0"/><!-- Best value <origin xyz = "0.105 0.09 0" rpy = "0 0 0" />-->
 	</visual>
@@ -56,13 +56,13 @@
 <link name ="Part2">
 	<collision>
 	<geometry>
-		<mesh filename="package://fanuc_motoman/meshes/Part 2.STL" scale="0.001 0.001 0.001"/>
+		<mesh filename="package://fanuc/meshes/Part 2.STL" scale="0.001 0.001 0.001"/>
 	</geometry>
 		<origin xyz="-0.125 -0.110 0" rpy ="0 0 0"/>
 	</collision>
 	<visual>
 	<geometry>
-		<mesh filename="package://fanuc_motoman/meshes/Part 2.STL" scale="0.001 0.001 0.001"/>
+		<mesh filename="package://fanuc/meshes/Part 2.STL" scale="0.001 0.001 0.001"/>
 	</geometry>
 		<origin xyz="-0.125 -0.110 0" rpy="0 0 0"/>
 	</visual>
@@ -91,13 +91,13 @@
 	<collision>
 		<origin xyz="-0.075 -0.1 -0.07" rpy="0 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Part 3.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Part 3.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="-0.075 -0.1 -0.07" rpy="0 0 0"/>
 		<geometry>
-			<mesh filename = "package://fanuc_motoman/meshes/Part 3.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename = "package://fanuc/meshes/Part 3.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -123,13 +123,13 @@
 	<collision>
 		<origin xyz="-0.078 -0.068 -0.06" rpy="0 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Part 4.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Part 4.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="-0.078 -0.068 -0.06" rpy="0 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Part 4.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Part 4.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -154,13 +154,13 @@
 	<collision>
 		<origin xyz ="-0.1 -0.05 -0.045" rpy = "0 0 0" />
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Part 5.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Part 5.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz ="-0.1 -0.05 -0.045" rpy = "0 0 0" />
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Part 5.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Part 5.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -187,13 +187,13 @@
 	<collision>
 		<origin xyz="-0.045 -.035 0.050" rpy ="0 1.57 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Part 6.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Part 6.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="-0.045 -.035 0.050" rpy ="0 1.57 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Part 6.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Part 6.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -222,13 +222,13 @@
 	<collision>
 		<origin xyz="-0.065 -0.065 0" rpy ="-1.57 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_base.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_base.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="-0.065 -0.065 0" rpy ="-1.57 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_base.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_base.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -256,13 +256,13 @@
 	<collision>
 		<origin xyz="0.075 0.038 0.075" rpy ="-1.57 0 3.14"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="0.075 0.038 0.075" rpy ="-1.57 0 3.14"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -288,13 +288,13 @@
 	<collision>
 		<origin xyz="-0.075 -0.038 0.075" rpy ="-1.57 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="-0.075 -0.038 0.075" rpy ="-1.57 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -320,13 +320,13 @@
 	<collision>
 		<origin xyz="-0.075 -0.038 0.075" rpy ="-1.57 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="-0.075 -0.038 0.075" rpy ="-1.57 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_motoman/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc/meshes/Gripper_finger.STL" scale="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>

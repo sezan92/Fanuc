@@ -4,7 +4,7 @@
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
 
     </include>
-    <include file = "$(find fanuc_motoman)/launch/spawn_urdf.launch">
+    <include file = "$(find fanuc)/launch/spawn_urdf.launch">
         <arg name = "x" value="0.0"/>
         <arg name = "y" value = "0.0"/>
         <arg name = "z" value ="0.0"/>
@@ -12,7 +12,7 @@
         <arg name = "robot_name" value = "fanuc"/>
     </include>
 	<!--Fanuc Control Launch-->
-	<rosparam file="$(find fanuc_motoman)/config/fanuc_control.yaml" command="load" ns ="/fanuc"/>
+	<rosparam file="$(find fanuc)/config/fanuc_control.yaml" command="load" ns ="/fanuc"/>
 	<node name ="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/fanuc" args="fanuc/Base_Part2_controller fanuc/Part2_Part3_controller fanuc/Part3_Part4_controller fanuc/Part4_Part5_controller fanuc/Part6_Gripper_Base_controller fanuc/joint_state_controller"/>
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
     respawn="false" output="screen">
